@@ -1,5 +1,3 @@
-<div align="center">
-
 ⏱️ GestiPoint
 Le pointage des employés, centralisé dans une plateforme web.
 Présences · Pauses · Absences · Suivi RH
@@ -149,7 +147,3 @@ Cette version est un projet de démonstration à préparer avant un usage réel 
 - Ajouter des tests sur les pointages, les pauses et les permissions.
 - Améliorer la validation de la reconnaissance faciale et la gestion des erreurs GPS.
 - Étendre l'expérience mobile et automatiser les rapports.
-<div align="center">
-
-GestiPoint — Simplifier le suivi quotidien des présences.
-</div>
