@@ -126,7 +126,7 @@ Le diagramme présente les interactions des employés, de l’administration/RH 
 
 Il décrit notamment le pointage, les pauses, la gestion du personnel, la consultation des rapports et les contrôles de visage, de localisation et d’adresse IP.
 
-![Diagramme de cas d’utilisation](docs/screenshots/WhatsApp%20Image%202026-10-13%20at%2016.55.31%20%282%29.jpeg)
+![alt text](<docs/WhatsApp Image 2026-10-13 at 16.55.31 (2).jpeg>)
 
 ### Modèle de classes
 
