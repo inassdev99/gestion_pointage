@@ -67,7 +67,7 @@ La plateforme propose des espaces adaptés aux administrateurs, aux managers/RH,
 
 Présentation de la plateforme, aperçu des fonctionnalités et accès à la connexion.
 
-![Accueil GestiPoint]c:\xampp\htdocs\gestion_pointage\docs\WhatsApp Image 2026-10-13 at 16.55.31 (1).jpeg
+![!\[Accueil GestiPoint\]c:\xampp\htdocs\gestion_pointage\docs\WhatsApp Image 2026-10-13 at 16.55.31 (1).jpeg](<docs/WhatsApp Image 2026-10-13 at 16.55.31 (1).jpeg>)
 ### 2. Connexion
 
 Interface de connexion avec identifiant et mot de passe.
