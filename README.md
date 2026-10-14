@@ -1,149 +1,263 @@
-⏱️ GestiPoint
-Le pointage des employés, centralisé dans une plateforme web.
-Présences · Pauses · Absences · Suivi RH
+# ⏱️ GestiPoint
 
+### Application web de gestion du pointage et des présences
 
+**Présences • Pauses • Absences • Reconnaissance faciale • Suivi RH**
 
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Bootstrap](https://img.shields.io/badge/Bootstrap_5-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
 
-Une application de gestion de pointage conçue pour remplacer les feuilles papier et faciliter le suivi quotidien des équipes.
-Présentation • Fonctionnalités • Interfaces • Installation • Structure
-</div>
+---
 
-🎯 Présentation
-GestiPoint réunit le pointage, les demandes des employés et les outils de suivi RH dans une même application. Chaque profil dispose d'un espace adapté : l'employé enregistre sa présence, le manager suit les équipes, l'administrateur gère les paramètres et le viewer consulte les informations.
-Le projet comprend des mécanismes de reconnaissance faciale, de vérification GPS et de contrôle des adresses IP. Leur fonctionnement dépend de la configuration, des données et des autorisations du navigateur.
-✨ Fonctionnalités
-Domaine	Fonctions présentes dans le code
-Pointage	Arrivée, départ, début et fin de pause ; calcul du temps de travail
-Identification	Connexion par identifiant et mot de passe ; interface de reconnaissance faciale
-QR code	Endpoints de génération et de lecture, à vérifier lors de l'intégration
-Contrôles	Zones GPS, adresses IP autorisées, alertes de pointage suspect
-Ressources humaines	Employés, départements et suivi des équipes
-Demandes	Absences, congés, déplacements et réclamations
-Communication	Notifications destinées aux employés
-Suivi	Tableaux de bord, historique, rapports et statistiques selon le rôle
-Exports	Export compatible Excel et page de rapport imprimable en PDF
+## 🎯 Présentation
 
+GestiPoint est une application web permettant de centraliser le suivi des présences des employés et de remplacer les feuilles de pointage papier.
 
-Les fonctionnalités sont recensées à partir des fichiers fournis. Leur validation de bout en bout nécessite la base de données du projet.
+Elle permet d’enregistrer les arrivées, les départs et les pauses, de suivre les heures travaillées et de gérer les absences, les congés et les réclamations.
 
-👥 Espaces utilisateurs
-Profil	Utilisation principale	Dossier
-Administrateur	Gestion des employés, suivi des pointages, alertes et configuration GPS/IP	admin/
-Manager / RH	Suivi des équipes, traitement des demandes et rapports	Manager/
-Employé	Pointage, profil personnel, demandes et notifications	employe/
-Viewer	Consultation des tableaux de bord et des informations de suivi	viewer/
+La plateforme propose des espaces adaptés aux administrateurs, aux managers/RH, aux employés et aux visiteurs en lecture seule. Elle comprend également des mécanismes de reconnaissance faciale et de contrôle GPS/IP.
 
+## ✨ Fonctionnalités
 
-Les droits effectifs sont définis par les contrôles PHP de chaque page.
-🖼️ Interfaces de l’application
-Les captures suivantes ont été fournies depuis l’application. Certaines vues présentent une période sans pointages ; elles illustrent aussi les états vides de l’interface.
-Accueil
-Page de présentation de GestiPoint : aperçu de la solution, accès à la connexion et mise en avant des fonctionnalités.
+| Domaine | Fonctionnalités |
+| --- | --- |
+| Pointage | Enregistrement des arrivées et des départs |
+| Pauses | Suivi du début et de la fin des pauses |
+| Temps de travail | Calcul des heures travaillées |
+| Reconnaissance faciale | Interface de vérification du visage lors du pointage |
+| Géolocalisation | Vérification des zones GPS autorisées |
+| Contrôle IP | Gestion des adresses IP autorisées |
+| Employés | Ajout, modification et gestion du personnel |
+| Départements | Organisation des employés par département |
+| Absences | Gestion des absences, congés et déplacements |
+| Réclamations | Envoi et traitement des réclamations |
+| Notifications | Consultation des notifications |
+| Alertes | Suivi des pointages suspects |
+| Historique | Consultation des pointages par période |
+| Rapports | Statistiques et rapports de présence |
+| Exports | Export compatible Excel et rapport imprimable en PDF |
 
-Connexion
-Formulaire de connexion avec identifiant et mot de passe, et accès rapide aux profils de démonstration.
+> Le projet comprend également des endpoints de génération et de lecture de QR codes. Leur intégration doit être vérifiée dans l’environnement de développement.
 
-Tableau de bord administrateur
-Vue synthétique des employés actifs, présents, retards et absences, avec une liste des employés et des pointages du jour.
+## 👥 Rôles utilisateurs
 
-Gestion du personnel
-Liste des employés avec matricule, département et statut. Les actions permettent d’ajouter, modifier ou supprimer un employé.
+| Rôle | Utilisation principale |
+| --- | --- |
+| Administrateur | Gestion du personnel, des pointages, des alertes et des paramètres |
+| Manager / RH | Suivi des équipes, traitement des demandes et consultation des rapports |
+| Employé | Pointage, consultation du profil, demandes et notifications |
+| Viewer | Consultation des informations de suivi en lecture seule |
 
-Espace employé
-Accueil personnel de l’employé avec un accès direct à la page de pointage.
+## 🛠️ Technologies utilisées
 
-Pointage et reconnaissance faciale
-Interface de pointage affichant l’heure, le bouton « ARRIVÉE (Face ID) », l’état de la pause et la mention de vérification GPS automatique. La capture montre l’interface avant pointage, sans résultat de vérification faciale.
+| Couche | Technologies |
+| --- | --- |
+| Backend | PHP, PDO et sessions |
+| Base de données | MySQL |
+| Frontend | HTML, CSS et JavaScript |
+| Interface | Bootstrap 5 et Font Awesome |
+| Reconnaissance faciale | face-api.js |
+| Environnement local | XAMPP |
 
-Enregistrement d’une absence
-Fenêtre de création d’une action pour un employé : type d’action, dates, motif et statut de l’absence.
+## 🖼️ Captures d’écran
 
-Historique des pointages
-Consultation des pointages par mois avec récapitulatif et détail. La période illustrée ne contient aucun pointage.
+### 1. Page d’accueil
 
-Rapports et statistiques
-Rapports filtrés par période, indicateurs de présence, absences par type et boutons d’export Excel et PDF. Les indicateurs reflètent les données disponibles au moment de la capture.
+Présentation de la plateforme, aperçu des fonctionnalités et accès à la connexion.
 
-📐 Conception UML
-Diagramme de cas d’utilisation
-Ce diagramme présente les acteurs employé, administrateur / RH et visiteur, ainsi que les interactions avec le système de sécurité. Il décrit notamment le pointage, les pauses, la consultation de l’historique, la gestion des employés et départements, les demandes, les notifications et les vérifications de visage, IP et GPS. Il représente la conception fonctionnelle ; il ne constitue pas une validation des contrôles de sécurité.
+![Accueil GestiPoint](docs/screenshots/WhatsApp%20Image%202026-10-13%20at%2016.55.31%20%281%29.jpeg)
 
-Modèle de classes — fichier source
-Le fichier [diaggeti.uml](docs/uml/diaggeti.uml) contient un projet XML au format historique StarUML. Il comprend notamment les classes utilisateur, admin, employe, viwer, Departement, Pointage, Absence, Reclamation, Alerte, Notification, VerificationFace, ZoneGPS et IPAutorisee. Des variantes de classes sont également présentes dans le modèle.
-Ouvrir ce fichier avec une version ou un outil compatible avec le format StarUML historique pour consulter et modifier le diagramme. Ce modèle de conception ne remplace pas l’export SQL nécessaire à l’installation.
-🛠️ Technologies
-Couche	Technologies
-Backend	PHP, sessions, PDO
-Base de données	MySQL
-Frontend	HTML, CSS, JavaScript, Bootstrap 5
-Interface	Font Awesome, police Manrope
-Reconnaissance faciale	face-api.js ; modèles chargés localement ou depuis des sources distantes
-Échanges client/serveur	Endpoints PHP dans api/
+### 2. Connexion
 
+Interface de connexion avec identifiant et mot de passe.
 
-🚀 Installation locale
-1. Préparer l'environnement
-Utiliser un environnement tel que XAMPP avec Apache, PHP et MySQL, ainsi que l'extension PHP pdo_mysql. Un navigateur récent et une connexion Internet sont utiles pour les bibliothèques chargées depuis des CDN.
-2. Placer les fichiers
-Décompresser le projet dans le dossier web :
-C:\xampp\htdocs\gestion_pointage\
-Démarrer Apache et MySQL depuis le panneau XAMPP.
-3. Restaurer la base de données
-Créer une base nommée gestion_pointage dans phpMyAdmin puis importer l'export SQL correspondant à cette version du projet.
-L'archive fournie ne contient aucun fichier .sql. Il faut récupérer cet export depuis l'environnement de développement original avant de pouvoir utiliser les pages connectées. Créer une base vide ne suffit pas : le schéma et les données attendus sont nécessaires.
+![Connexion](docs/screenshots/image%2820261014-143206%29.png)
 
-4. Configurer la connexion
-Adapter les valeurs présentes dans includes/config.php à l'environnement local :
+### 3. Tableau de bord administrateur
+
+Vue synthétique du personnel, des présences, des retards et des absences du jour.
+
+![Tableau de bord administrateur](docs/screenshots/image%2820261014-143143%29.png)
+
+### 4. Gestion du personnel
+
+Liste des employés, informations professionnelles, départements et actions de gestion.
+
+![Gestion du personnel](docs/screenshots/image%2820261014-143159%29.png)
+
+### 5. Espace employé
+
+Accueil personnel avec accès direct au pointage.
+
+![Espace employé](docs/screenshots/image%2820261014-143119%29.png)
+
+### 6. Pointage
+
+Interface affichant l’heure, le bouton d’arrivée avec reconnaissance faciale et l’état de la pause.
+
+![Pointage employé](docs/screenshots/image%2820261014-143103%29.png)
+
+### 7. Enregistrement d’une absence
+
+Formulaire permettant de sélectionner un employé, un type d’action, des dates, un motif et un statut.
+
+![Enregistrement d’une absence](docs/screenshots/image%2820261014-142341%29.png)
+
+### 8. Historique des pointages
+
+Consultation des pointages par mois avec récapitulatif et détail des enregistrements.
+
+![Historique des pointages](docs/screenshots/image%2820261014-142404%29.png)
+
+### 9. Rapports et statistiques
+
+Filtrage par période, indicateurs de présence et accès aux exports.
+
+![Rapports et statistiques](docs/screenshots/image%2820261014-142346%29.png)
+
+> Certaines captures présentent une période sans pointages et illustrent les états vides de l’application.
+
+## 📐 Conception UML
+
+### Diagramme de cas d’utilisation
+
+Le diagramme présente les interactions des employés, de l’administration/RH et des visiteurs avec la plateforme.
+
+Il décrit notamment le pointage, les pauses, la gestion du personnel, la consultation des rapports et les contrôles de visage, de localisation et d’adresse IP.
+
+![Diagramme de cas d’utilisation](docs/screenshots/WhatsApp%20Image%202026-10-13%20at%2016.55.31%20%282%29.jpeg)
+
+### Modèle de classes
+
+Le fichier source du modèle est disponible ici :
+
+[Consulter ou télécharger diaggeti.uml](docs/uml/diaggeti.uml)
+
+Ce fichier utilise le format XML historique de StarUML. Il contient notamment les classes liées aux utilisateurs, aux employés, aux départements, aux pointages, aux absences, aux réclamations, aux notifications et aux contrôles de sécurité.
+
+## 🚀 Installation locale
+
+### 1. Préparer l’environnement
+
+Installer XAMPP ou un environnement équivalent comprenant :
+
+- Apache ;
+- PHP avec l’extension `pdo_mysql` ;
+- MySQL ;
+- phpMyAdmin.
+
+### 2. Installer le projet
+
+Placer le dossier du projet dans :
+
+```text
+C:\xampp\htdocs\gestion_pointage
+```
+
+Démarrer **Apache** et **MySQL** depuis le panneau XAMPP.
+
+### 3. Configurer la base de données
+
+Créer une base nommée :
+
+```text
+gestion_pointage
+```
+
+Importer l’export SQL correspondant à la version du projet.
+
+> L’archive utilisée pour cette documentation ne contient pas de fichier SQL. L’export de la base doit être récupéré depuis l’environnement de développement original. Une base vide ne suffit pas pour faire fonctionner les pages connectées.
+
+### 4. Adapter la connexion
+
+Configurer les paramètres dans `includes/config.php` :
+
+```php
 $host = 'localhost';
 $dbname = 'gestion_pointage';
 $username = 'root';
-$password = ''; // Exemple local uniquement ; adapter à votre serveur.
-Ce fichier contient actuellement deux blocs de connexion PDO : vérifier les deux occurrences lors d'un changement de paramètres.
-5. Ouvrir l'application
+$password = '';
+```
+
+Ces paramètres sont un exemple pour le développement local.
+
+> Le fichier fourni contient deux blocs de connexion PDO : vérifier les deux occurrences lors d’une modification.
+
+### 5. Accéder à l’application
+
+Ouvrir dans le navigateur :
+
+```text
 http://localhost/gestion_pointage/
+```
+
+Pour accéder directement à la connexion :
+
+```text
 http://localhost/gestion_pointage/login.php
-Utiliser un compte local de test correspondant aux données importées. Le fichier de connexion contient aussi des comptes de démonstration codés en dur ; leurs mots de passe ne sont pas reproduits dans cette documentation.
-6. Préparer la caméra et la localisation
-Autoriser la caméra et la géolocalisation dans le navigateur. Pour une utilisation distante, servir l'application en HTTPS ; localhost convient généralement au développement local.
-Le dossier local prévu pour les modèles est assets/models/face-api/, absent de l'archive. La page de pointage prévoit des sources distantes de secours : vérifier leur accessibilité, ou installer les modèles attendus localement. Les captures sont enregistrées dans assets/images/captures/, qui doit être accessible en écriture au serveur PHP.
-📁 Structure du projet
-gestion_pointage/
-├── admin/                  # Administration, alertes, rapports et paramètres
-├── Manager/                # Espace manager / RH
-├── employe/                # Espace personnel et pointage
-├── viewer/                 # Consultation
-├── api/                    # Visage, GPS, QR code et notifications
-├── includes/               # Configuration, authentification et fonctions
-├── assets/
-│   ├── css/                # Styles
-│   ├── js/                 # Scripts et bibliothèque face-api.js
-│   └── images/captures/    # Captures faciales ; données privées
-├── docs/
-│   ├── screenshots/        # Les 10 images fournies
-│   └── uml/diaggeti.uml     # Modèle UML source
-├── index.php               # Accueil
-├── login.php               # Connexion
-├── register.php            # Inscription
-├── logout.php              # Déconnexion
-└── README.md
-Cette arborescence résume les dossiers principaux ; les illustrations de l'accueil et les scripts utilitaires restent également à la racine.
-🔎 Points à connaître sur cette version
-- Casse des chemins : le dossier livré est Manager/, alors que plusieurs liens utilisent manager/. Harmoniser les chemins avant un déploiement sur un système sensible à la casse, notamment Linux.
-- Export PDF : le fichier export_pdf.php produit une page HTML imprimable ; utiliser la fonction « Enregistrer en PDF » du navigateur.
-- Reconnaissance faciale : il s'agit d'une intégration web basée sur face-api.js, sans certification équivalente au Face ID d'Apple. Tester les refus et les acceptations avec plusieurs utilisateurs.
-- Configuration Face++ : des constantes de configuration sont présentes dans includes/config.php ; elles ne démontrent pas qu'un service Face++ est utilisé par le parcours actif.
-- Base de données : le schéma complet et le nombre exact de tables ne peuvent pas être certifiés sans l'export SQL. Le code de connexion référence notamment utilisateur.
-🔐 Avant une publication du code ou une mise en production
-Cette version est un projet de démonstration à préparer avant un usage réel :
-- Retirer les comptes codés en dur et remplacer la comparaison directe des mots de passe par password_hash() et password_verify().
-- Externaliser les secrets et renforcer la validation serveur des contrôles de pointage ; un score facial transmis par le client ne constitue pas, à lui seul, une preuve fiable d'identité.
-- Vérifier les autorisations, la protection CSRF et la validation des données pour chaque opération.
-- Exclure les photographies, captures faciales et données personnelles d'un dépôt public.
-- Protéger ou retirer les scripts utilitaires sensibles, notamment reset_all.php, avant un déploiement.
-🧭 Évolutions possibles
-- Fournir un schéma SQL versionné et des données de démonstration anonymisées.
-- Centraliser la configuration et uniformiser les noms de dossiers.
+```
+
+### 6. Autoriser la caméra et la localisation
+
+Autoriser l’accès à la caméra et à la géolocalisation dans le navigateur.
+
+Pour une utilisation distante, servir l’application en HTTPS.
+
+Le chemin local prévu pour les modèles de reconnaissance faciale est :
+
+```text
+assets/models/face-api/
+```
+
+Ce dossier n’est pas présent dans l’archive fournie. La page de pointage prévoit des sources distantes de secours ; vérifier leur accessibilité ou installer les modèles localement.
+
+## 📂 Organisation du projet
+
+| Chemin | Contenu |
+| --- | --- |
+| `admin/` | Administration et paramètres |
+| `Manager/` | Espace manager et RH |
+| `employe/` | Espace personnel et pointage |
+| `viewer/` | Consultation |
+| `api/` | Endpoints visage, GPS, QR code et notifications |
+| `includes/` | Configuration, authentification et fonctions |
+| `assets/css/` | Feuilles de style |
+| `assets/js/` | Scripts JavaScript |
+| `assets/images/captures/` | Captures faciales privées |
+| `docs/screenshots/` | Captures utilisées dans le README |
+| `docs/uml/` | Fichier source UML |
+| `index.php` | Accueil |
+| `login.php` | Connexion |
+| `register.php` | Inscription |
+| `logout.php` | Déconnexion |
+
+## 🔎 Points techniques
+
+- Le dossier fourni est nommé `Manager/`, alors que certains liens utilisent `manager/`. Harmoniser la casse avant un déploiement sous Linux.
+- L’export Excel produit un fichier CSV compatible avec Excel.
+- L’export PDF affiche une page imprimable : utiliser « Enregistrer en PDF » dans le navigateur.
+- La reconnaissance faciale utilise face-api.js et doit être testée avec plusieurs utilisateurs.
+- Les permissions effectives dépendent des contrôles PHP de chaque page.
+
+## 🔐 Préparation à la mise en production
+
+- Remplacer les comptes de démonstration codés en dur.
+- Utiliser `password_hash()` et `password_verify()` pour les mots de passe.
+- Externaliser les secrets et renforcer la validation côté serveur.
+- Vérifier les autorisations, la protection CSRF et les données reçues.
+- Exclure les captures faciales et les données personnelles du dépôt public.
+- Protéger ou retirer les scripts utilitaires sensibles, notamment `reset_all.php`.
+
+## 🧭 Améliorations possibles
+
+- Ajouter un schéma SQL versionné et des données de démonstration anonymisées.
+- Améliorer l’expérience mobile.
 - Ajouter des tests sur les pointages, les pauses et les permissions.
-- Améliorer la validation de la reconnaissance faciale et la gestion des erreurs GPS.
-- Étendre l'expérience mobile et automatiser les rapports.
+- Renforcer la vérification faciale et la gestion des erreurs GPS.
+- Automatiser les rapports périodiques.
+
+---
+
+**GestiPoint — Simplifier le suivi quotidien des présences.**
