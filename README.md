@@ -79,39 +79,41 @@ Interface de connexion avec identifiant et mot de passe.
 Vue synthétique du personnel, des présences, des retards et des absences du jour.
 
 ![docs/WhatsApp Image 2026-10-15 at 14.22.43.jpeg](<docs/WhatsApp Image 2026-10-15 at 14.22.43.jpeg>)
- ### 4. Gestion du personnel
+
+### 4. Gestion du personnel
 
 Liste des employés, informations professionnelles, départements et actions de gestion.
-jpeg
+
 ![docs/WhatsApp Image 2026-10-15 at 14.22.43.jpeg](<docs/WhatsApp Image 2026-10-15 at 14.23.48.jpeg>)
 
 ### 5. Espace employé
 
 Accueil personnel avec accès direct au pointage.
-
+![<docs/WhatsApp Image 2026-10-15 at 14.21.53.jpeg](<docs/WhatsApp Image 2026-10-15 at 14.21.53.jpeg>)
 ### 6. Pointage
 
 Interface affichant l’heure, le bouton d’arrivée avec reconnaissance faciale et l’état de la pause.
 
-![Pointage employé](docs/screenshots/image%2820261014-143103%29.png)
+![docs/WhatsApp Image 2026-10-15 at 14.22.05 (1).jpeg](<docs/WhatsApp Image 2026-10-15 at 14.22.05 (1).jpeg>)
 
 ### 7. Enregistrement d’une absence
 
 Formulaire permettant de sélectionner un employé, un type d’action, des dates, un motif et un statut.
 
-![Enregistrement d’une absence](docs/screenshots/image%2820261014-142341%29.png)
+
+![docs/WhatsApp Image 2026-10-15 at 14.24.45.jpeg](<docs/WhatsApp Image 2026-10-15 at 14.24.45.jpeg>)
 
 ### 8. Historique des pointages
 
 Consultation des pointages par mois avec récapitulatif et détail des enregistrements.
 
-![Historique des pointages](docs/screenshots/image%2820261014-142404%29.png)
+![Historique des pointages](<docs/WhatsApp Image 2026-10-15 at 14.24.53.jpeg>)
 
 ### 9. Rapports et statistiques
 
 Filtrage par période, indicateurs de présence et accès aux exports.
 
-![Rapports et statistiques](docs/screenshots/image%2820261014-142346%29.png)
+![Rapports et statistiques](<docs/WhatsApp Image 2026-10-15 at 14.24.21.jpeg>)
 
 > Certaines captures présentent une période sans pointages et illustrent les états vides de l’application.
 
@@ -128,7 +130,7 @@ Il décrit notamment le pointage, les pauses, la gestion du personnel, la consul
 ### Modèle de classes
 
 Le fichier source du modèle est disponible ici :
-docs/diag_getipoint.png
+![alt text](docs/diag_getipoint.png)
 Ce fichier utilise le format XML historique de StarUML. Il contient notamment les classes liées aux utilisateurs, aux employés, aux départements, aux pointages, aux absences, aux réclamations, aux notifications et aux contrôles de sécurité.
 
 ## 🚀 Installation locale
