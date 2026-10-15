@@ -78,14 +78,13 @@ Interface de connexion avec identifiant et mot de passe.
 
 Vue synthétique du personnel, des présences, des retards et des absences du jour.
 
-docs/WhatsApp Image 2026-10-15 at 14.22.43.jpeg
+C:\xampp\htdocs\gestion_pointage\docs\WhatsApp Image 2026-10-15 at 14.22.43.jpeg 
 
-### 4. Gestion du personnel
+ 4. Gestion du personnel
 
 Liste des employés, informations professionnelles, départements et actions de gestion.
 
-![Gestion du personnel]docs/WhatsApp Image 2026-10-15 at 14.23.48.jpeg
-
+C:\xampp\htdocs\gestion_pointage\docs\WhatsApp Image 2026-10-15 at 14.23.48.jpeg
 ### 5. Espace employé
 
 Accueil personnel avec accès direct au pointage.
@@ -131,8 +130,7 @@ Il décrit notamment le pointage, les pauses, la gestion du personnel, la consul
 ### Modèle de classes
 
 Le fichier source du modèle est disponible ici :
-![](docs/diag_getipoint.png)
-
+C:\xampp\htdocs\gestion_pointage\docs\diag_getipoint.png
 
 Ce fichier utilise le format XML historique de StarUML. Il contient notamment les classes liées aux utilisateurs, aux employés, aux départements, aux pointages, aux absences, aux réclamations, aux notifications et aux contrôles de sécurité.
 
