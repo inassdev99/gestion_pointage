@@ -72,19 +72,19 @@ Présentation de la plateforme, aperçu des fonctionnalités et accès à la con
 
 Interface de connexion avec identifiant et mot de passe.
 
-![Connexion](docs/screenshots/image%2820261014-143206%29.png)
+docs/WhatsApp Image 2026-10-15 at 14.15.21.jpeg
 
 ### 3. Tableau de bord administrateur
 
 Vue synthétique du personnel, des présences, des retards et des absences du jour.
 
-![Tableau de bord administrateur](docs/screenshots/image%2820261014-143143%29.png)
+docs/WhatsApp Image 2026-10-15 at 14.22.43.jpeg
 
 ### 4. Gestion du personnel
 
 Liste des employés, informations professionnelles, départements et actions de gestion.
 
-![Gestion du personnel](docs/screenshots/image%2820261014-143159%29.png)
+docs/WhatsApp Image 2026-10-15 at 14.23.48.jpeg
 
 ### 5. Espace employé
 
@@ -131,8 +131,8 @@ Il décrit notamment le pointage, les pauses, la gestion du personnel, la consul
 ### Modèle de classes
 
 Le fichier source du modèle est disponible ici :
+![](docs/diag_getipoint.png)
 
-[Consulter ou télécharger diaggeti.uml](docs/uml/diaggeti.uml)
 
 Ce fichier utilise le format XML historique de StarUML. Il contient notamment les classes liées aux utilisateurs, aux employés, aux départements, aux pointages, aux absences, aux réclamations, aux notifications et aux contrôles de sécurité.
 
