@@ -78,17 +78,16 @@ Interface de connexion avec identifiant et mot de passe.
 
 Vue synthétique du personnel, des présences, des retards et des absences du jour.
 
-docs\WhatsApp Image 2026-10-15 at 14.22.43.jpeg
- 4. Gestion du personnel
+![docs/WhatsApp Image 2026-10-15 at 14.22.43.jpeg](<docs/WhatsApp Image 2026-10-15 at 14.22.43.jpeg>)
+ ### 4. Gestion du personnel
 
 Liste des employés, informations professionnelles, départements et actions de gestion.
+jpeg
+![docs/WhatsApp Image 2026-10-15 at 14.22.43.jpeg](<docs/WhatsApp Image 2026-10-15 at 14.23.48.jpeg>)
 
-C:\xampp\htdocs\gestion_pointage\docs\WhatsApp Image 2026-10-15 at 14.23.48.jpeg
 ### 5. Espace employé
 
 Accueil personnel avec accès direct au pointage.
-
-![Espace employé](docs/screenshots/image%2820261014-143119%29.png)
 
 ### 6. Pointage
 
