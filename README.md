@@ -72,7 +72,9 @@ Présentation de la plateforme, aperçu des fonctionnalités et accès à la con
 
 Interface de connexion avec identifiant et mot de passe.
 
-docs/WhatsApp Image 2026-10-15 at 14.15.21.jpeg
+![
+    
+](<docs/WhatsApp Image 2026-10-15 at 14.15.21.jpeg>)
 
 ### 3. Tableau de bord administrateur
 
@@ -84,7 +86,7 @@ docs/WhatsApp Image 2026-10-15 at 14.22.43.jpeg
 
 Liste des employés, informations professionnelles, départements et actions de gestion.
 
-docs/WhatsApp Image 2026-10-15 at 14.23.48.jpeg
+![Gestion du personnel]docs/WhatsApp Image 2026-10-15 at 14.23.48.jpeg
 
 ### 5. Espace employé
 
